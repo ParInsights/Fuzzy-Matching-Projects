@@ -1,18 +1,14 @@
-# Fuzzy-Matching-Projects
-Just a bunch of projects and files related to my work in matching names. 
+# Fuzzy Matching 
+# Fuzzywuzzy Methods Review
 
-
-
-# Fuzzy Matching - Fuzzywuzzy Methods Review
 ## Overview
 
 Review of the four methods that calculate the edit distance between some ordering of the tokens in both input strings. This is done using the difflib.ratio function which will:
 
-      Return a measure of the sequences' similarity (float in [0,1]).
+- Return a measure of the sequences' similarity (float in [0,1]).
+- Where T is the total number of elements in both sequences, and M is the number of matches,      this is 2.0*M / T. 
 
-    Where T is the total number of elements in both sequences, and M is the number of matches,      this is 2.0*M / T. 
-          
-          Note that this is 1 if the sequences are identical, and 0 if they have nothing in common.
+- Note that this is 1 if the sequences are identical, and 0 if they have nothing in common.
 
 
 The four following fuzzywuzzy methods call difflib.ratio on different combinations of the input strings.
